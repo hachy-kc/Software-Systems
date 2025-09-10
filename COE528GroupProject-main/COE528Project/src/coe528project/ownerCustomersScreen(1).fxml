@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coe528project.OwnerCustomersScreenController">
+   <children>
+      <TableView fx:id="table" layoutX="22.0" layoutY="14.0" prefHeight="227.0" prefWidth="558.0">
+        <columns>
+          <TableColumn fx:id="usernameColumn" prefWidth="186.0" text="Username" />
+          <TableColumn fx:id="passwordColumn" prefWidth="186.0" text="Password" />
+          <TableColumn fx:id="pointsColumn" prefWidth="186.0" text="Points" />
+        </columns>
+      </TableView>
+      <TextField fx:id="username" layoutX="21.0" layoutY="257.0" prefHeight="42.0" prefWidth="173.0" promptText="username" />
+      <TextField fx:id="password" layoutX="214.0" layoutY="257.0" prefHeight="42.0" prefWidth="173.0" promptText="password" />
+      <Button fx:id="add" layoutX="406.0" layoutY="257.0" mnemonicParsing="false" onAction="#clickAdd" prefHeight="42.0" prefWidth="173.0" text="Add" />
+      <Button fx:id="delete" layoutX="23.0" layoutY="320.0" mnemonicParsing="false" onAction="#clickDelete" prefHeight="58.0" prefWidth="269.0" text="Delete" />
+      <Button fx:id="back" layoutX="309.0" layoutY="320.0" mnemonicParsing="false" onAction="#clickBack" prefHeight="58.0" prefWidth="269.0" text="Back" />
+   </children>
+</AnchorPane>
